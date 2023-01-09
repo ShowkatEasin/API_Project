@@ -20,5 +20,9 @@ $router->post('/osman', function () use ($router) {
     return "This is Showkat Osman";
 });
 
+$router->post('/{name}/{age}[/{city}]', function($name, $age, $city=null){
+    return $name.$age.$city ;
+});
+
 
 
